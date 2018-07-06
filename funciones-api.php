@@ -48,7 +48,7 @@ add_action( 'rest_api_init', function () {
     'methods' => 'GET',
     'callback' => 'listar_noticias',
   ) );
-  register_rest_route( 'WordAPP/v1', '/noticia/(?P<id>\d+)', array(
+  register_rest_route( 'wordapp/v1', '/noticia/(?P<id>\d+)', array(
      'methods' => 'GET',
      'callback' => 'noticia_por_id',
    ) );
