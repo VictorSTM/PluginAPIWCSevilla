@@ -16,7 +16,7 @@ function listar_noticias(){
     	'ID'		     		  => $entrada -> ID,
     	'fechaEntrada'    => $entrada ->post_date,
     	'tituloEntrada'   => $entrada ->post_title,
-    	'tituloExtracto'  => $entrada ->post_excerpt,
+    	'ExtractoEntrada'  => $entrada ->post_excerpt,
     	'nombreAutor'     => get_author_name( $entrada -> post_author),
     ]);
   }
@@ -32,7 +32,7 @@ function noticia_por_id($data){
   $datosNoticia=[
 		'fechaEntrada'   => $noticia ->post_date,
     'tituloEntrada'    => $noticia ->post_title,
-	  'extractoEntrada'   => $noticia ->post_excerpt,
+	  'contenidoEntrada'   => $noticia ->post_content,
 	  'nombreAutor'    => get_author_name( $noticia -> post_author),
 		'avatarURL'	   => get_avatar_url( $noticia -> post_author ),
   ];
