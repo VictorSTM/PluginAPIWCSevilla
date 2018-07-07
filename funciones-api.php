@@ -18,6 +18,7 @@ function listar_noticias(){
     	'tituloEntrada'   => $entrada ->post_title,
     	'ExtractoEntrada'  => $entrada ->post_excerpt,
     	'nombreAutor'     => get_author_name( $entrada -> post_author),
+      'urlImagenDestacada' => get_the_post_thumbnail_url($entrada -> ID),
     ]);
   }
  	return $listado_noticias;
@@ -35,6 +36,7 @@ function noticia_por_id($data){
 	  'contenidoEntrada'   => $noticia ->post_content,
 	  'nombreAutor'    => get_author_name( $noticia -> post_author),
 		'avatarURL'	   => get_avatar_url( $noticia -> post_author ),
+    'urlImagenDestacada' => get_the_post_thumbnail_url($noticia -> ID),
   ];
 
 	return $datosNoticia;
