@@ -31,7 +31,6 @@ License: GPL2
 define( 'APIREST', '0.0.5' );
 define( 'APIREST__MINIMUM_WP_VERSION', '4.0' );
 define( 'APIREST__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-//define( 'AKISMET_DELETE_LIMIT', 100000 );
 
 require_once( APIREST__PLUGIN_DIR . 'funciones-api.php' );
 
